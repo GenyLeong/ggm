@@ -6878,5 +6878,10 @@ body {
 h3 {
   font-size: 2.42rem; }
 
+.teal-card {
+  background-color: #084242;
+  color: #ffffff; }
+
 .paragraph {
-  margin: 2em 0; }
+  margin: 3em auto;
+  width: 64%; }

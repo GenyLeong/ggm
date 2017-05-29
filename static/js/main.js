@@ -14,7 +14,7 @@ function resize_fondo(){
 
     var_1 = TweenLite.from('.first', 2, {opacity:0, xPercent:"-150px"});
     var_2 = TweenLite.from('.second', 2, {opacity:0, xPercent:"150px"});
-    var_3 = TweenLite.from('.three', 2, {opacity:0, xPercent:"-150px"});
+    var_3 = TweenLite.from('.third', 2, {opacity:0, xPercent:"-150px"});
     var_4 = TweenLite.from('.fourth', 2, {opacity:0, xPercent:"150px"});
     var_5 = TweenLite.from('.fifth', 2, {opacity:0, xPercent:"-150px"});
     var_6 = TweenLite.from('.sixth', 2, {opacity:0, xPercent:"150px"});
@@ -39,7 +39,7 @@ function resize_fondo(){
     .addTo(controller);
 
     scene_3= new ScrollMagic.Scene({
-        triggerElement: '.three',
+        triggerElement: '.third',
        triggerHook: 0.6
     })
     .setTween(var_3)
