@@ -14,26 +14,27 @@ function resize_fondo(){
 
     var_1 = TweenLite.from('.first', 2, {opacity:0, xPercent:"-150px"});
     var_2 = TweenLite.from('.second', 3, {opacity:0, xPercent:"150px"});
+    var_3 = TweenLite.from('.three', 2, {opacity:0, xPercent:"-150px"});
 
     scene_1= new ScrollMagic.Scene({
         triggerElement: '.first',
-       triggerHook: "onEnter"
+       triggerHook: .1
     })
     .setTween(var_1)
     .addTo(controller);
 
     scene_2= new ScrollMagic.Scene({
         triggerElement: '.second',
-       triggerHook: .9
+       triggerHook: .8
     })
     .setTween(var_2)
     .addTo(controller);
 
     scene_3= new ScrollMagic.Scene({
-        triggerElement: '.first',
-       triggerHook: .8
+        triggerElement: '.three',
+       triggerHook: .9
     })
-    .setTween(var_1)
+    .setTween(var_3)
     .addTo(controller);
 
     scene_1.addIndicators({name: "primer parrafo"})
