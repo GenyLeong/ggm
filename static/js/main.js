@@ -24,74 +24,74 @@ function resize_fondo(){
 
     scene_1= new ScrollMagic.Scene({
         triggerElement: '.first',
-       triggerHook: "onEnter"
+       triggerHook: 0.6
     })
     .setTween(var_1)
-    .offset(100)
+    // .offset(100)
     .addTo(controller);
 
     scene_2= new ScrollMagic.Scene({
         triggerElement: '.second',
-       triggerHook: "onEnter"
+       triggerHook: 0.6
     })
     .setTween(var_2)
-    .offset(200)
+    // .offset(200)
     .addTo(controller);
 
     scene_3= new ScrollMagic.Scene({
         triggerElement: '.three',
-       triggerHook: "onEnter"
+       triggerHook: 0.6
     })
     .setTween(var_3)
-    .offset(300)
+    // .offset(300)
     .addTo(controller);
 
     scene_4= new ScrollMagic.Scene({
         triggerElement: '.fourth',
-       triggerHook: "onEnter"
+       triggerHook: 0.6
     })
     .setTween(var_4)
-    .offset(400)
+    // .offset(400)
     .addTo(controller);
 
     scene_5= new ScrollMagic.Scene({
         triggerElement: '.fifth',
-       triggerHook: "onEnter"
+       triggerHook: 0.6
     })
     .setTween(var_5)
-    .offset(100)
+    // .offset(500)
     .addTo(controller);
 
     scene_6= new ScrollMagic.Scene({
         triggerElement: '.sixth',
-       triggerHook: "onEnter"
+       triggerHook: 0.6
     })
     .setTween(var_6)
-    .offset(200)
+    // .offset(600)
     .addTo(controller);
 
     scene_7= new ScrollMagic.Scene({
         triggerElement: '.seventh',
-       triggerHook: "onEnter"
+       triggerHook: 0.6
     })
     .setTween(var_7)
-    .offset(300)
+    // .offset(700)
     .addTo(controller);
 
     scene_8= new ScrollMagic.Scene({
         triggerElement: '.eighth',
-       triggerHook: "onEnter"
+       triggerHook: 0.6
     })
     .setTween(var_8)
-    .offset(400)
+    // .offset(800)
     .addTo(controller);
 
     scene_9= new ScrollMagic.Scene({
         triggerElement: '.ninth',
-       triggerHook: "onEnter"
+       triggerHook: 0.6
     })
     .setTween(var_9)
-    .offset(400)
+    // .offset(900)
     .addTo(controller);
 
     scene_1.addIndicators({name: "primer parrafo"})
@@ -99,10 +99,10 @@ function resize_fondo(){
     scene_3.addIndicators({name: "tercer parrafo"})
     scene_4.addIndicators({name: "cuarto parrafo"})
     scene_5.addIndicators({name: "quinto parrafo"})
-    scene_6.addIndicators({name: "quinto parrafo"})
-    scene_7.addIndicators({name: "quinto parrafo"})
-    scene_8.addIndicators({name: "quinto parrafo"})
-    scene_9.addIndicators({name: "quinto parrafo"})
+    scene_6.addIndicators({name: "sexto parrafo"})
+    scene_7.addIndicators({name: "septimo parrafo"})
+    scene_8.addIndicators({name: "octavo parrafo"})
+    scene_9.addIndicators({name: "noveno parrafo"})
 })();
 
 $(document).ready(function() {
