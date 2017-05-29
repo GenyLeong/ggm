@@ -1,28 +1,54 @@
+function resize_fondo(){
+  var altura = window.innerHeight;
+  var intro_altura = document.getElementById('intro')
+  intro_altura.style.height = altura + 'px';
+}
+
 (function() {
-    // var controller = new ScrollMagic.Controller();
+    var controller = new ScrollMagic.Controller();
     var var_1, var_2, var_3,
         scene_1, scene_2, scene_3,
         lineLeft = $(".first-line-left"),
         lineRight = $(".first-line-right"),
         tl;
 
-    var_1 = TweenLite.from('.title', 2, {opacity:0, xPercent:"-150px"});
-    var_2 = TweenLite.from('.sub-title', 3, {opacity:0, xPercent:"150px"});
+    var_1 = TweenLite.from('.first', 2, {opacity:0, xPercent:"-150px"});
+    var_2 = TweenLite.from('.second', 3, {opacity:0, xPercent:"150px"});
 
-    tl = new TimelineMax();
+    scene_1= new ScrollMagic.Scene({
+        triggerElement: '.first',
+       triggerHook: "onEnter"
+    })
+    .setTween(var_1)
+    .addTo(controller);
 
-    /* Whole tomato - move left side and leaves together */
-    tl.set([lineLeft], {xPercent: 23.6});
-    tl.set([lineRight], {xPercent: 41});
+    scene_2= new ScrollMagic.Scene({
+        triggerElement: '.second',
+       triggerHook: .9
+    })
+    .setTween(var_2)
+    .addTo(controller);
 
-    // scene_1= new ScrollMagic.Scene({
-    //     triggerElement: '.title',
-    // })
-    // .setTween(var_1)
-    // .addTo(controller);
+    scene_3= new ScrollMagic.Scene({
+        triggerElement: '.first',
+       triggerHook: .8
+    })
+    .setTween(var_1)
+    .addTo(controller);
 
-    // scene_1.addIndicators({name: "titular pagina"})
+    scene_1.addIndicators({name: "primer parrafo"})
+    scene_2.addIndicators({name: "segundo parrafo"})
+    scene_3.addIndicators({name: "tercer parrafo"})
 })();
+
+$(document).ready(function() {
+  resize_fondo()
+  $(window).on('scroll resize', function() {
+            resize_fondo()
+  });
+
+})
+
 
 // window.onload = function(){
 //  TweenLite.from(".title", 10, {left:600});
