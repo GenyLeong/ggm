@@ -37,6 +37,10 @@ function resize_fondo(){
 //   info.style.height = "100%";
 // }
 
+// CustomEase.create("hop", "M0,0 C0.798,0.672 0.912,0.004 0.744,0.446 0.617,0.778 0.856,0.318 1,0.988");
+//
+// TweenLite.to(".logo", 2, { ease: "hop", rotation:30, x: -500, y:-700});
+
 /*texto*/
     var controller = new ScrollMagic.Controller();
     var var_1, var_2, var_3, var_4,
@@ -143,7 +147,18 @@ $(document).ready(function() {
   $(window).on('scroll resize', function() {
             resize_fondo()
   });
-
+  $('.smooth').click(function() {
+              if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                  if (target.length) {
+                      $('html, body').animate({
+                          scrollTop: target.offset().top
+                      }, 800);
+                      return false;
+                  }
+              }
+  });
 })
 
 
