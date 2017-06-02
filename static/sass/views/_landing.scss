@@ -1,6 +1,31 @@
 .paragraph{
-    margin: 3em auto;
-    width: 64%;
+    margin: 1em auto;
+    width: 100%;
+}
+
+#intro-text{
+  img{
+    margin: auto;
+  }
+}
+.materialboxed:not(.active) {
+-webkit-filter: grayscale(100%);
+-webkit-transition: .5s ease-in-out;
+-moz-filter: grayscale(100%);
+-moz-transition: .5s ease-in-out;
+-o-filter: grayscale(100%);
+-o-transition: .5s ease-in-out;
+filter: grayscale(100%);
+    &:hover{
+      -webkit-filter: grayscale(0);
+        -webkit-transition: .5s ease-in-out;
+        -moz-filter: grayscale(0);
+        -moz-transition: .5s ease-in-out;
+        -o-filter: grayscale(0);
+        -o-transition: .5s ease-in-out;
+        filter: grayscale(0);
+        opacity: 1 !important;
+    }
 }
 
 /*mariposas*/
@@ -56,7 +81,7 @@
 		}
   }
 
-@for $i from 1 to 10 {
+@for $i from 1 to 6 {
   .rotate:nth-child(#{$i}) {
 		animation: #{8 + random(2)}s rotate infinite linear;
 		.butterfly{
@@ -172,17 +197,22 @@
     height: 100%;
   }
   h1 {
-    font-family: $font_vibes;
+    font-family: $font_vibes, cursive;
     font-size: 4em;
-    color: white;
-    font-weight:700;
+    color: #000;
+    font-weight: 700;
     letter-spacing: 1px;
     margin: .1em auto;
+    text-shadow: 0.8px 0.8px 1px #fff;
+    text-align: center;
   }
   li {
     position:relative;
     margin-top:10px;
-    color: #ffa488;
+    font-family: $font_oswald;
+    color:$white;
+    text-shadow: 0.8px 0.8px 1px #000;
+    font-size: 1.1em;
   }
   #orderNow {
     position: absolute;

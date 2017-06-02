@@ -64,7 +64,6 @@ function resize_fondo(){
        triggerHook: 0.6
     })
     .setTween(var_1)
-    // .offset(100)
     .addTo(controller);
 
     scene_2= new ScrollMagic.Scene({
@@ -72,7 +71,6 @@ function resize_fondo(){
        triggerHook: 0.6
     })
     .setTween(var_2)
-    // .offset(200)
     .addTo(controller);
 
     scene_3= new ScrollMagic.Scene({
@@ -82,68 +80,76 @@ function resize_fondo(){
     .setTween(var_3)
     // .offset(300)
     .addTo(controller);
-
-    scene_4= new ScrollMagic.Scene({
-        triggerElement: '.fourth',
-       triggerHook: 0.6
-    })
-    .setTween(var_4)
-    // .offset(400)
-    .addTo(controller);
-
-    scene_5= new ScrollMagic.Scene({
-        triggerElement: '.fifth',
-       triggerHook: 0.6
-    })
-    .setTween(var_5)
-    // .offset(500)
-    .addTo(controller);
-
-    scene_6= new ScrollMagic.Scene({
-        triggerElement: '.sixth',
-       triggerHook: 0.6
-    })
-    .setTween(var_6)
-    // .offset(600)
-    .addTo(controller);
-
-    scene_7= new ScrollMagic.Scene({
-        triggerElement: '.seventh',
-       triggerHook: 0.6
-    })
-    .setTween(var_7)
-    // .offset(700)
-    .addTo(controller);
-
-    scene_8= new ScrollMagic.Scene({
-        triggerElement: '.eighth',
-       triggerHook: 0.6
-    })
-    .setTween(var_8)
-    // .offset(800)
-    .addTo(controller);
-
-    scene_9= new ScrollMagic.Scene({
-        triggerElement: '.ninth',
-       triggerHook: 0.6
-    })
-    .setTween(var_9)
-    // .offset(900)
-    .addTo(controller);
+    //
+    // scene_4= new ScrollMagic.Scene({
+    //     triggerElement: '.fourth',
+    //    triggerHook: 0.6
+    // })
+    // .setTween(var_4)
+    // // .offset(400)
+    // .addTo(controller);
+    //
+    // scene_5= new ScrollMagic.Scene({
+    //     triggerElement: '.fifth',
+    //    triggerHook: 0.6
+    // })
+    // .setTween(var_5)
+    // // .offset(500)
+    // .addTo(controller);
+    //
+    // scene_6= new ScrollMagic.Scene({
+    //     triggerElement: '.sixth',
+    //    triggerHook: 0.6
+    // })
+    // .setTween(var_6)
+    // // .offset(600)
+    // .addTo(controller);
+    //
+    // scene_7= new ScrollMagic.Scene({
+    //     triggerElement: '.seventh',
+    //    triggerHook: 0.6
+    // })
+    // .setTween(var_7)
+    // // .offset(700)
+    // .addTo(controller);
+    //
+    // scene_8= new ScrollMagic.Scene({
+    //     triggerElement: '.eighth',
+    //    triggerHook: 0.6
+    // })
+    // .setTween(var_8)
+    // // .offset(800)
+    // .addTo(controller);
+    //
+    // scene_9= new ScrollMagic.Scene({
+    //     triggerElement: '.ninth',
+    //    triggerHook: 0.6
+    // })
+    // .setTween(var_9)
+    // // .offset(900)
+    // .addTo(controller);
 
     scene_1.addIndicators({name: "primer parrafo"})
     scene_2.addIndicators({name: "segundo parrafo"})
-    scene_3.addIndicators({name: "tercer parrafo"})
-    scene_4.addIndicators({name: "cuarto parrafo"})
-    scene_5.addIndicators({name: "quinto parrafo"})
-    scene_6.addIndicators({name: "sexto parrafo"})
-    scene_7.addIndicators({name: "septimo parrafo"})
-    scene_8.addIndicators({name: "octavo parrafo"})
-    scene_9.addIndicators({name: "noveno parrafo"})
+    // scene_3.addIndicators({name: "tercer parrafo"})
+    // scene_4.addIndicators({name: "cuarto parrafo"})
+    // scene_5.addIndicators({name: "quinto parrafo"})
+    // scene_6.addIndicators({name: "sexto parrafo"})
+    // scene_7.addIndicators({name: "septimo parrafo"})
+    // scene_8.addIndicators({name: "octavo parrafo"})
+    // scene_9.addIndicators({name: "noveno parrafo"})
 })();
 
 $(document).ready(function() {
   resize_fondo()
+  $(".materialboxed").on("click", function(){
+        $('.paragraph').css('transform', 'inherit');
+
+    });
+      // $( ".materialboxed" ).toggle(function() {
+      //     $(this).css('filter', 'inherit');
+      // });
+
   $(window).on('scroll resize', function() {
             resize_fondo()
   });
