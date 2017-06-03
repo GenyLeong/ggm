@@ -4,6 +4,8 @@ function resize_fondo(){
   intro_altura.style.height = altura + 'px';
 }
 
+$(document).ready(function() {
+
 (function() {
   var $ = Sizzle,
       $panel1 = $("#panel1"),
@@ -24,22 +26,13 @@ function resize_fondo(){
      .from($panel1Text, 0.5, {scale:0.5, autoAlpha:0, ease:Back.easeOut})
      .set($panel2, {top:0}, "+=2")
      .from($panel2, 0.2, {autoAlpha:0, scale:1.5})
-     .from($panel2Text, 0.2, {top:250}, "+=0.5")
-     .to($panel2Text, 0.2, {top:0}, "+=1")
+     .from($panel2Text, 0.2, {bottom:0}, "+=0.5")
+     .to($panel2Text, 0.2, {top:0}, "+=-0.2")
      .set($panel3, {top:0}, "final")
-     .from($info, 0.2, {autoAlpha:0, scale:1.5})
-     .to($panel2, 0.5, {top:0}, "final")
+     .from($info, 0.1, {autoAlpha:0, scale:1.5})
+     .to($panel2, 0.1, {top:0}, "final")
      .staggerFrom($list, 0.3, {autoAlpha:0, left:50}, 0.1, "+=0.2")
      .from($orderNow, 0.5, {scale:0, autoAlpha:0, ease:Back.easeOut});
-
-// function restart(){
-//   var info = document.getElementById("info")
-//   info.style.height = "100%";
-// }
-
-// CustomEase.create("hop", "M0,0 C0.798,0.672 0.912,0.004 0.744,0.446 0.617,0.778 0.856,0.318 1,0.988");
-//
-// TweenLite.to(".logo", 2, { ease: "hop", rotation:30, x: -500, y:-700});
 
 /*texto*/
     var controller = new ScrollMagic.Controller();
@@ -140,15 +133,11 @@ function resize_fondo(){
     // scene_9.addIndicators({name: "noveno parrafo"})
 })();
 
-$(document).ready(function() {
   resize_fondo()
   $(".materialboxed").on("click", function(){
         $('.paragraph').css('transform', 'inherit');
 
     });
-      // $( ".materialboxed" ).toggle(function() {
-      //     $(this).css('filter', 'inherit');
-      // });
 
   $(window).on('scroll resize', function() {
             resize_fondo()
