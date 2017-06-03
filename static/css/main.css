@@ -6892,7 +6892,8 @@ h3 {
   width: 100%; }
 
 #intro-text img {
-  margin: auto; }
+  margin: auto;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
 
 .materialboxed:not(.active) {
   -webkit-filter: grayscale(100%);
@@ -6970,64 +6971,64 @@ h3 {
     background-size: cover; }
 
 .rotate:nth-child(1) {
-  -webkit-animation: 10s rotate infinite linear;
-          animation: 10s rotate infinite linear; }
+  -webkit-animation: 9s rotate infinite linear;
+          animation: 9s rotate infinite linear; }
   .rotate:nth-child(1) .butterfly {
-    -webkit-transform: rotateZ(186deg) rotateX(-16deg) translateY(84vw) rotateZ(90deg);
-            transform: rotateZ(186deg) rotateX(-16deg) translateY(84vw) rotateZ(90deg); }
+    -webkit-transform: rotateZ(202deg) rotateX(-2deg) translateY(88vw) rotateZ(90deg);
+            transform: rotateZ(202deg) rotateX(-2deg) translateY(88vw) rotateZ(90deg); }
     .rotate:nth-child(1) .butterfly .wing {
       -webkit-animation-delay: 0.01s;
               animation-delay: 0.01s;
-      -webkit-animation-duration: 0.28s;
-              animation-duration: 0.28s; }
+      -webkit-animation-duration: 0.25s;
+              animation-duration: 0.25s; }
 
 .rotate:nth-child(2) {
-  -webkit-animation: 10s rotate infinite linear;
-          animation: 10s rotate infinite linear; }
-  .rotate:nth-child(2) .butterfly {
-    -webkit-transform: rotateZ(115deg) rotateX(12deg) translateY(82vw) rotateZ(90deg);
-            transform: rotateZ(115deg) rotateX(12deg) translateY(82vw) rotateZ(90deg); }
-    .rotate:nth-child(2) .butterfly .wing {
-      -webkit-animation-delay: 0.01s;
-              animation-delay: 0.01s;
-      -webkit-animation-duration: 0.3s;
-              animation-duration: 0.3s; }
-
-.rotate:nth-child(3) {
   -webkit-animation: 9s rotate infinite linear;
           animation: 9s rotate infinite linear; }
-  .rotate:nth-child(3) .butterfly {
-    -webkit-transform: rotateZ(336deg) rotateX(2deg) translateY(66vw) rotateZ(90deg);
-            transform: rotateZ(336deg) rotateX(2deg) translateY(66vw) rotateZ(90deg); }
-    .rotate:nth-child(3) .butterfly .wing {
-      -webkit-animation-delay: 0.02s;
-              animation-delay: 0.02s;
+  .rotate:nth-child(2) .butterfly {
+    -webkit-transform: rotateZ(78deg) rotateX(18deg) translateY(98vw) rotateZ(90deg);
+            transform: rotateZ(78deg) rotateX(18deg) translateY(98vw) rotateZ(90deg); }
+    .rotate:nth-child(2) .butterfly .wing {
+      -webkit-animation-delay: 0.12s;
+              animation-delay: 0.12s;
       -webkit-animation-duration: 0.23s;
               animation-duration: 0.23s; }
 
-.rotate:nth-child(4) {
+.rotate:nth-child(3) {
   -webkit-animation: 10s rotate infinite linear;
           animation: 10s rotate infinite linear; }
+  .rotate:nth-child(3) .butterfly {
+    -webkit-transform: rotateZ(112deg) rotateX(15deg) translateY(91vw) rotateZ(90deg);
+            transform: rotateZ(112deg) rotateX(15deg) translateY(91vw) rotateZ(90deg); }
+    .rotate:nth-child(3) .butterfly .wing {
+      -webkit-animation-delay: 0.2s;
+              animation-delay: 0.2s;
+      -webkit-animation-duration: 0.29s;
+              animation-duration: 0.29s; }
+
+.rotate:nth-child(4) {
+  -webkit-animation: 9s rotate infinite linear;
+          animation: 9s rotate infinite linear; }
   .rotate:nth-child(4) .butterfly {
-    -webkit-transform: rotateZ(240deg) rotateX(-19deg) translateY(72vw) rotateZ(90deg);
-            transform: rotateZ(240deg) rotateX(-19deg) translateY(72vw) rotateZ(90deg); }
+    -webkit-transform: rotateZ(361deg) rotateX(-4deg) translateY(79vw) rotateZ(90deg);
+            transform: rotateZ(361deg) rotateX(-4deg) translateY(79vw) rotateZ(90deg); }
     .rotate:nth-child(4) .butterfly .wing {
-      -webkit-animation-delay: 0.07s;
-              animation-delay: 0.07s;
-      -webkit-animation-duration: 0.28s;
-              animation-duration: 0.28s; }
+      -webkit-animation-delay: 0.16s;
+              animation-delay: 0.16s;
+      -webkit-animation-duration: 0.27s;
+              animation-duration: 0.27s; }
 
 .rotate:nth-child(5) {
   -webkit-animation: 9s rotate infinite linear;
           animation: 9s rotate infinite linear; }
   .rotate:nth-child(5) .butterfly {
-    -webkit-transform: rotateZ(239deg) rotateX(16deg) translateY(84vw) rotateZ(90deg);
-            transform: rotateZ(239deg) rotateX(16deg) translateY(84vw) rotateZ(90deg); }
+    -webkit-transform: rotateZ(347deg) rotateX(-17deg) translateY(63vw) rotateZ(90deg);
+            transform: rotateZ(347deg) rotateX(-17deg) translateY(63vw) rotateZ(90deg); }
     .rotate:nth-child(5) .butterfly .wing {
-      -webkit-animation-delay: 0.16s;
-              animation-delay: 0.16s;
-      -webkit-animation-duration: 0.21s;
-              animation-duration: 0.21s; }
+      -webkit-animation-delay: 0.1s;
+              animation-delay: 0.1s;
+      -webkit-animation-duration: 0.22s;
+              animation-duration: 0.22s; }
 
 @-webkit-keyframes rotate {
   0% {
